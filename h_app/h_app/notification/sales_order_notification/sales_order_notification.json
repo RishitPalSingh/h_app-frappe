@@ -1,0 +1,31 @@
+{
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "doc.workflow_state==\"Approved\"",
+ "creation": "2024-07-15 11:43:45.052442",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Sales Order",
+ "enabled": 1,
+ "event": "Submit",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "Add your message here",
+ "message_type": "Markdown",
+ "modified": "2024-07-15 11:43:45.052442",
+ "modified_by": "Administrator",
+ "module": "h app",
+ "name": "Sales Order Notification",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "contact_email"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "sender": "rishit pal",
+ "sender_email": "rishitpal3@gmail.com",
+ "subject": "Sales Order Notification"
+}
