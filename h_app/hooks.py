@@ -12,6 +12,8 @@ app_license = "mit"
 # include js, css files in header of desk.html
 # app_include_css = "/assets/h_app/css/h_app.css"
 # app_include_js = "/assets/h_app/js/h_app.js"
+app_include_js = "/assets/js/silent_print.min.js"
+
 
 # include js, css files in header of web template
 # web_include_css = "/assets/h_app/css/h_app.css"
@@ -28,7 +30,9 @@ app_license = "mit"
 # page_js = {"page" : "public/js/file.js"}
 
 # include js in doctype views
-# doctype_js = {"doctype" : "public/js/doctype.js"}
+doctype_js = {
+                "Purchase Order" : "public/js/purchase_order.js"
+            }
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
@@ -131,7 +135,10 @@ doc_events = {
     "Customer":{
         "validate":"h_app.customizations.Customer.AnniversaryValidate"
     },
-    "Purchase Order":{"on_update":"h_app.customizations.Purchase_order_mail.mailer"}
+    "Purchase Order":{"on_update":"h_app.customizations.Purchase_order_mail.mailer"},
+    "Sales Order":{
+        "validate":"h_app.customizations.Sales_Order.AnniversaryValidate"
+    }
 }
 
 # Scheduled Tasks
